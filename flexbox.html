@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Navigation Bar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+            display: flex; /*to make the nav a flex container */
+            align-items: center; /* center items vertically along the cross axis */
+            justify-content: space-between; /*distribute items along the main axis */
+            height: 60px; /* Just for visual demonstration of vertical centering */
+        }
+        nav ul  {
+            margin: 10;
+            padding: 10;
+            display: flex; /*Arrange list items horizontally using flexbox */
+            width: 10%; /*Ensure the ul takes full width to allow space-between to work */
+        }
+        nav ul li {
+            padding: 0 50px; /* Add some horizontal padding for spacing */
+        }
+        nav ul li a {
+            /* nav se sare nav wale ke ander wale elements select hoge, 
+            ul se specefic uske ander wale hoge, 
+            li se compiler ko samjhega ki ye wale elemets select karne hai, 
+            then a se paka samajhta hai ki ye wale elements ko he select karna hai  */
+            color: rgb(156, 37, 37);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
